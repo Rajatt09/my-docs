@@ -1,0 +1,124 @@
+# filepath: /c:/Rajat/myDocs/documentation-project/mkdocs.yml
+# Project Information
+site_name: My Docs (Rajat Bhati)
+site_url: https://docs.rajatbhati.in/
+site_author: Rajat Bhati
+site_description: >-
+  A personal documentation repository featuring concise notes, guides, troubleshooting logs, and verified code snippets for efficient full-stack development, tailored for personal reference and skill growth.
+
+# Repository
+repo_name: Rajatt09/docs
+repo_url: https://github.com/Rajatt09/docs
+
+# Copyright
+copyright: Copyright &copy; 2025 Rajat Bhati
+
+# Theme
+theme:
+  name: material
+  # logo: assets/images/logo.png
+  # favicon: assets/images/logo.png
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.top
+    # - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # font:
+  #   text: Inter
+  #   code: JetBrains Mono
+  language: en
+# extra_css:
+#   - stylesheets/extra.css
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Rajatt09
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/rajatbhati/
+      name: LinkedIn
+  generator: false
+  meta_tags:
+    - name: keywords
+      content: documentation, programming, code snippets
+    - name: author
+      content: Rajat Bhati
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: Rajatt09
+      repo: docs
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - React:
+      - Snippets: react/snippets/example-snippet.md
+      - Information: react/information/example-info.md
+  - Virtual Environment:
+      - Snippets: virtual-environment/snippets/create-virtual-env.md
+      - Information: virtual-environment/information/virtual-env-info.md
+  - Creating MK Docs guide:
+      - Folder Structure: mkdocs/snippets/mkdocs-snippet.md
+      - Information: mkdocs/information/mkdocs-info.md
