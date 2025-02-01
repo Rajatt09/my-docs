@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.rajatbhati.in/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/mkdocs/information/mkdocs-info/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/mkdocs/snippets/mkdocs-snippet/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/react/information/example-info/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/react/snippets/example-snippet/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/virtual-environment/information/virtual-env-info/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/virtual-environment/snippets/create-virtual-env/</loc>
+         <lastmod>2025-02-01</lastmod>
+    </url>
+</urlset>
