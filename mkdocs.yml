@@ -118,11 +118,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   - React:
-      - Snippets: react/snippets/example-snippet.md
       - Information: react/information/example-info.md
+      - Snippets: react/snippets/example-snippet.md
+
   - Virtual Environment:
-      - Snippets: virtual-environment/snippets/create-virtual-env.md
       - Information: virtual-environment/information/virtual-env-info.md
+      - Snippets: virtual-environment/snippets/create-virtual-env.md
+
   - Creating MK Docs guide:
       - Folder Structure: mkdocs/snippets/mkdocs-snippet.md
       - Information: mkdocs/information/mkdocs-info.md
@@ -133,10 +135,3 @@ nav:
           - SDLC Models: software-engineering/basics/sdlc-models.md
           - Agile Model: software-engineering/basics/agile-model.md
           - SDLC Models Summary: software-engineering/basics/sdlc-models-summary.md
-          - Algorithms: software-engineering/basics/algorithms.md
-          - Data Structures: software-engineering/basics/data-structures.md
-          - Design Patterns: software-engineering/basics/design-patterns.md
-      - Architecture:
-          - Cloud Native: software-engineering/architecture/cloud-native.md
-          - Microservices: software-engineering/architecture/microservices.md
-          - System Design: software-engineering/architecture/system-design.md
