@@ -128,6 +128,13 @@ nav:
   - Creating MK Docs guide:
       - Folder Structure: mkdocs/snippets/mkdocs-snippet.md
       - Information: mkdocs/information/mkdocs-info.md
+  - Computer Network:
+      - Protocol Layering: computer-network/protocol-layering.md
+      - HTTP Connections: computer-network/http-connections.md
+      - DNS:
+          - DNS: computer-network/dns/dns.md
+          - Web Hosting: computer-network/dns/web-hosting.md
+          - DNS Records: computer-network/dns/dns-records.md
   - Software Engineering:
       - Basics:
           - What is Software and Software Engineering?: software-engineering/basics/software-software_engineering.md

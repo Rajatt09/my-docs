@@ -182,6 +182,3 @@ flowchart TD
 - Not suitable for all projects → Works poorly in highly regulated environments (e.g., medical devices).
 - Requires experienced teams → Needs self-discipline & adaptability.
 - Less predictability → No fixed deadlines like Waterfall.
-
-[Agile Process Diagram](https://example.com/agile-process-diagram.png)
-[Scrum Framework Diagram](https://example.com/scrum-framework-diagram.png)

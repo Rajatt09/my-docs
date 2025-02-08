@@ -7,14 +7,17 @@ Welcome to the Documentation Project! This project is designed to provide quick 
 The project is organized into the following folders:
 
 - **react**: Contains snippets and information related to React.
+
   - **snippets**: Quick reference snippets for React projects.
   - **information**: Documentation and notes about React concepts.
 
 - **bootstrap**: Contains snippets and information related to Bootstrap.
+
   - **snippets**: Quick reference snippets for Bootstrap projects.
   - **information**: Documentation and notes about Bootstrap concepts.
 
 - **tailwind**: Contains snippets and information related to Tailwind CSS.
+
   - **snippets**: Quick reference snippets for Tailwind projects.
   - **information**: Documentation and notes about Tailwind concepts.
 
