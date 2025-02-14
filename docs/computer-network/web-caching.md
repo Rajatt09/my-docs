@@ -2,7 +2,30 @@
 
 ## What is Web Caching?
 
-Web caching stores copies of web content closer to users to make future requests faster.
+A web cache (proxy server) sits between your browser and the internet. It saves copies of web pages and files so that future requests for the same data load faster without contacting the original server.
+
+## Types of Proxy Servers
+
+🔹 Forward Proxy → Sits between users and the internet (e.g., used in offices & schools).
+
+- Hiding your real IP address.
+- Bypassing website restrictions (e.g., if YouTube is blocked in school).
+
+🔹 Reverse Proxy → Sits between users and a web server (used by websites to manage traffic).
+
+- Website security → Hides the real web server to protect against hackers.
+- Load balancing → Distributes traffic across multiple servers to prevent crashes.
+- Caching → Stores website content for faster loading.
+
+### When to Use a Proxy?
+
+- If you just want to bypass website restrictions (e.g., school blocks YouTube).
+- If you don’t care about encryption but want a different location.
+
+### When to Use a VPN?
+
+- If you want privacy & security (e.g., protecting personal data on public WiFi).
+- If you want to bypass geo-restrictions (e.g., watching Netflix US from another country).
 
 ## Approach
 

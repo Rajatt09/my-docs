@@ -134,3 +134,15 @@ CDNs have multiple servers across the globe, so when a DDoS attack occurs, the t
 ### What is CDN ?
 
 Content Delivery Network (CDN) is a network of servers that are distributed across different geographical locations. The main goal of a CDN is to deliver content to users more efficiently and quickly by reducing the distance between the user and the server hosting the content.
+
+**CDNs Help With**
+
+- Faster website loading (especially for global users).
+- Lower bandwidth usage (less traffic on the main server).
+- Better security (protection from cyberattacks like DDoS).
+
+### Examples of CDNs
+
+- Cloudflare (protects & speeds up websites).
+- Akamai (used by Netflix for video streaming).
+- Amazon CloudFront (used by AWS-powered websites).

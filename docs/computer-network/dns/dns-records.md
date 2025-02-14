@@ -36,33 +36,33 @@ Here's an example to understand how DNS records are inserted when you register a
 
 ### Step-by-Step Process
 
-Let’s assume you start a new company called "Network Utopia" and you register the domain networkuptopia.com. Here’s how it works:
+Let’s assume you start a new company called "Network Utopia" and you register the domain example.com. Here’s how it works:
 
 #### Domain Registration
 
-1. **You register the domain networkuptopia.com with a DNS registrar, like Network Solutions.**
+1. **You register the domain example.com with a DNS registrar, like Network Solutions.**
 2. **During this registration process, you will provide the names and IP addresses of your authoritative name servers (DNS servers).**
 
 #### Registrar Inserts Records
 
 The registrar will then insert DNS records into the TLD (Top-Level Domain) server for .com (since .com is the TLD of your domain). These records typically include:
 
-- **NS (Name Server) Record:** Specifies which DNS servers are authoritative for your domain. This is where DNS queries for networkuptopia.com will be sent.
-  - **Example:** (networkuptopia.com, dns1.networkuptopia.com, NS)
-    - This means networkuptopia.com is associated with dns1.networkuptopia.com as its authoritative name server.
+- **NS (Name Server) Record:** Specifies which DNS servers are authoritative for your domain. This is where DNS queries for example.com will be sent.
+  - **Example:** (example.com, dns1.example.com, NS)
+    - This means example.com is associated with dns1.example.com as its authoritative name server.
 - **A (Address) Record:** This specifies the IP address of the authoritative DNS server.
-  - **Example:** (dns1.networkuptopia.com, 212.212.212.1, A)
-    - This means the authoritative DNS server for networkuptopia.com is located at IP address 212.212.212.1.
+  - **Example:** (dns1.example.com, 212.212.212.1, A)
+    - This means the authoritative DNS server for example.com is located at IP address 212.212.212.1.
 
 #### Create Additional Records for Subdomains
 
 Now, as a part of managing the domain, you can create additional DNS records for your website or services. For example:
 
-- **A record for www.networkuptopia.com:** This will associate the www subdomain with the IP address of your web server.
-- **MX (Mail Exchange) Record for networkuptopia.com:** This will specify the mail server responsible for handling emails sent to networkuptopia.com.
+- **A record for www.example.com:** This will associate the www subdomain with the IP address of your web server.
+- **MX (Mail Exchange) Record for example.com:** This will specify the mail server responsible for handling emails sent to example.com.
 
   - **Example:**
-    - **A record:** (www.networkuptopia.com, 212.212.212.2, A)
-      - This means that www.networkuptopia.com points to the IP address 212.212.212.2 (your web server).
-    - **MX record:** (networkuptopia.com, mail.networkuptopia.com, MX)
-      - This specifies that the mail server for networkuptopia.com is located at mail.networkuptopia.com.
+    - **A record:** (www.example.com, 212.212.212.2, A)
+      - This means that www.example.com points to the IP address 212.212.212.2 (your web server).
+    - **MX record:** (example.com, mail.example.com, MX)
+      - This specifies that the mail server for example.com is located at mail.example.com.
