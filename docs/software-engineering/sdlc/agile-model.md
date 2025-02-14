@@ -11,11 +11,48 @@ The Agile Model is an iterative and incremental software development approach th
 
 Unlike the Waterfall model, which follows a strict sequence, Agile is flexible, adaptive, and fast-paced.
 
+## User Stories
+
+User stories are a key component of agile software development. They are short, simple descriptions of a feature or functionality from the perspective of a user.
+
+### Pattern of User Story
+
+User stories are completely from the end-user perspective which follows the Role-Feature-Benefit pattern.
+
+- As a [ type of user ], I want [ an action ], so that [ some reason ]
+
+### Writing User Stories
+
+User stories are from a user perspective. So when user stories are written, users are given more importance during the process. Some points outlined which are taken into consideration during writing user stories like
+
+- Requirements
+- Tasks and their subtasks
+- Actual user
+- Importance to user words/feedback
+- Breaking user stories for larger requirements
+
+### INVEST Principles of User Stories
+
+A good user story should be based on INVEST principle which expresses the quality of the user story.
+
+- Independent – Not dependent on other.
+- Negotiable – Includes the important avoid contract.
+- Valuable – Provide value to customer.
+- Estimable – It should be estimated.
+- Small – It should be simple and small not complex.
+- Testable – It should be evaluated by pre-written acceptance criteria.
+
+### C’s in User Stories
+
+- Card – Write stories on cards, prioritize, estimate and schedule it accordingly.
+- Conversation – Conduct conversations, Specify the requirements and bring clarity.
+- Confirmation – Meet the acceptance criteria of the software.
+
 ## Phases of Agile Development
 
 Agile follows an iterative approach, meaning the software is developed in small increments (sprints or iterations).
 
-### 1. **Concept & Initiation**:
+### 1. **Concept & Initiation**
 
 - Define project vision and high-level goals.
 - Identify key stakeholders and set expectations.
@@ -71,6 +108,12 @@ Agile isn’t a single process but has multiple frameworks that implement Agile 
 - The team follows Daily Stand-up Meetings (15 min).
 - Defined roles: Scrum Master, Product Owner, Development Team.
 - Sprint Review & Retrospective after each sprint.
+
+-- Scrum Master – Removes obstacles, ensures Agile principles.
+
+-- Product Owner – Defines features, prioritizes backlog.
+
+-- Development Team – Delivers the work in Sprints.
 
 🔹 **Example Use Cases:**
 
@@ -182,3 +225,7 @@ flowchart TD
 - Not suitable for all projects → Works poorly in highly regulated environments (e.g., medical devices).
 - Requires experienced teams → Needs self-discipline & adaptability.
 - Less predictability → No fixed deadlines like Waterfall.
+
+---
+
+Note: Good for business systems, challenging for safety-critical systems.

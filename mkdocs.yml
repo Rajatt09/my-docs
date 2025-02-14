@@ -131,6 +131,7 @@ nav:
   - Computer Network:
       - Protocol Layering: computer-network/protocol-layering.md
       - HTTP Connections: computer-network/http-connections.md
+      - Web Caching: computer-network/web-caching.md
       - DNS:
           - DNS: computer-network/dns/dns.md
           - Web Hosting: computer-network/dns/web-hosting.md
@@ -138,7 +139,8 @@ nav:
   - Software Engineering:
       - Basics:
           - What is Software and Software Engineering?: software-engineering/basics/software-software_engineering.md
-          - SDLC: software-engineering/basics/sdlc.md
-          - SDLC Models: software-engineering/basics/sdlc-models.md
-          - Agile Model: software-engineering/basics/agile-model.md
-          - SDLC Models Summary: software-engineering/basics/sdlc-models-summary.md
+      - SDLC:
+          - SDLC: software-engineering/sdlc/sdlc.md
+          - SDLC Models: software-engineering/sdlc/sdlc-models.md
+          - Agile Model: software-engineering/sdlc/agile-model.md
+          - SDLC Models Summary: software-engineering/sdlc/sdlc-models-summary.md
