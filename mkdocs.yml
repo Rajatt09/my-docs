@@ -128,7 +128,14 @@ nav:
   - Creating MK Docs guide:
       - Folder Structure: mkdocs/snippets/mkdocs-snippet.md
       - Information: mkdocs/information/mkdocs-info.md
+  - Cyber Security:
+      - Common Terminologies: cyber-security/common-terminologies.md
+      - XSS Attacks: cyber-security/cyber-attacks/xss.md
+      - CSRF Attacks: cyber-security/cyber-attacks/csrf.md
+      - XXE Attacks: cyber-security/cyber-attacks/xxe.md
+      - SQL Injection: cyber-security/cyber-attacks/sql-injection.md
   - Computer Network:
+      - Common Terminologies: computer-network/common-terminologies.md
       - Protocol Layering: computer-network/protocol-layering.md
       - HTTP Connections: computer-network/http-connections.md
       - Web Caching: computer-network/web-caching.md

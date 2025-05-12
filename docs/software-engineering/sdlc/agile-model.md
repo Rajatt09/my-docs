@@ -226,6 +226,6 @@ flowchart TD
 - Requires experienced teams → Needs self-discipline & adaptability.
 - Less predictability → No fixed deadlines like Waterfall.
 
----
 
-Note: Good for business systems, challenging for safety-critical systems.
+---
+Note:  Good for business systems, challenging for safety-critical systems.
