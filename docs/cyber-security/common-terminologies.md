@@ -194,3 +194,10 @@ XML (eXtensible Markup Language) is used for storing and transporting data in a 
   }
 }
 ```
+
+# Notes
+
+- **Botnets:** A network of hijacked internet-connected devices that are installed with
+  malicious codes known as malware.
+- **Virus and Worms:** A Worm is a form of malware that replicates itself and can
+  spread to different computers via Network. A Virus is a malicious executable code
