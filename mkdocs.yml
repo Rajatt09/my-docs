@@ -117,9 +117,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - React:
-      - Information: react/information/example-info.md
-      - Snippets: react/snippets/example-snippet.md
+  - Cloud config:
+      - SSH keys and server: server-setup/ssh-keys-and-server-access.md
 
   - Virtual Environment:
       - Information: virtual-environment/information/virtual-env-info.md

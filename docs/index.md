@@ -6,6 +6,7 @@ This is the personal documentation site of Rajat Bhati.
 
 - **GitHub**: [https://github.com/Rajatt09](https://github.com/Rajatt09)
 - **LinkedIn**: [https://www.linkedin.com/in/rajatbhati](https://www.linkedin.com/in/rajatbhati)
+- **Portfolio**: [https://rajatbhati.vercel.app](https://rajatbhati.vercel.app)
 - **Email**: [rajatbhati9559@gmail.com](mailto:rajatbhati9559@gmail.com)
 
 ## Documentation
