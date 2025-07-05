@@ -117,8 +117,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Cloud config:
-      - SSH keys and server: server-setup/ssh-keys-and-server-access.md
+  - Development:
+      - SSH keys and server access: server-setup/ssh-keys-and-server-access.md
+      - Cloud Development: server-setup/cloud-development.md
 
   - Virtual Environment:
       - Information: virtual-environment/information/virtual-env-info.md

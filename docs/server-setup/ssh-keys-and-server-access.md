@@ -13,29 +13,89 @@ Think of the public key as a lock and the private key as the only key that opens
 
 ## How SSH Access Works
 
-1. **Generate a key pair on your system:**
+(a) **Generate a key pair on your system:**
 
-   ```bash
-   ssh-keygen
-   ```
+```bash
+ssh-keygen
+```
 
-   This creates:
+This creates:
 
-   - `id_rsa` → Your private key (keep this safe)
-   - `id_rsa.pub` → Your public key (you can share this)
+- `id_rsa` → Your private key (keep this safe)
+- `id_rsa.pub` → Your public key (you can share this)
 
-2. **Copy your public key to the remote system:**
+**These above keys are stored in :**
 
-   ```bash
-   # On the remote machine, add your public key to:
-   ~/.ssh/authorized_keys
-   ```
+- `C:\Users\<YourUsername>\.ssh` (on windows)
+- `~/.ssh/` (on linux)
 
-3. **SSH into the remote machine:**
+You can run following cmd:
 
-   ```bash
-   ssh username@ip_address
-   ```
+- `ls -la ~/.ssh` (lists all files, including hidden ones with detailed info like file permissions, etc)
+- `cat ~/.ssh/id_ed25519.pub` (To view your public key (example for Ed25519):)
+
+---
+
+**Copy your public key to the remote system:**
+
+```bash
+# On the remote machine, add your public key to:
+~/.ssh/authorized_keys
+```
+
+---
+
+(b) **SSH into the remote machine:**
+
+(i) `Enable OpenSSH Server on the Windows machine.`
+[ Go to Settings > Apps > Optional Features ]
+
+- If OpenSSH Server is not installed, click Add a feature and install OpenSSH Server
+
+- Then start it:
+
+```bash
+  Start-Service sshd
+  Set-Service -Name sshd -StartupType 'Automatic'
+```
+
+(ii) `Now create authorized_keys file in .ssh folder`
+
+```bash
+echo your-public-key >> ~/.ssh/authorized_keys #(for linux)
+
+notepad C:\Users\<RemoteUsername>\.ssh\authorized_keys #(for windows)
+```
+
+---
+
+Put the authorized_keys file in either of:
+
+- C:\Users\<RemoteUsername>\.ssh\authorized_keys (user-level login)
+
+- C:\ProgramData\ssh\administrators_authorized_keys (for admin-level access)
+
+---
+
+(iii) `Make sure the .ssh folder and authorized_keys file have the right permissions:`
+
+```bash
+icacls C:\Users\<RemoteUsername>\.ssh /grant <RemoteUsername>:"(R,W)"
+```
+
+(iv) `Restart-Service sshd (optional) :`
+
+```bash
+Restart-Service sshd  # optional
+```
+
+---
+
+(v) `SSH into the Windows machine (from your local machine)`
+
+```bash
+ssh username@windows-remote-ip
+```
 
 ---
 
@@ -49,7 +109,11 @@ You can serve a local website using:
 
 Ask the person to open the link. When they visit it, you’ll capture their IP — which you can then use to attempt SSH (if their system is configured to allow it).
 
-## Example: DigitalOcean Droplet
+---
+
+## Examples
+
+### DigitalOcean Droplet
 
 If you created a Droplet (virtual server) on DigitalOcean with SSH access:
 
@@ -68,6 +132,35 @@ To check:
 ```bash
 cd ~/.ssh
 cat authorized_keys
+```
+
+---
+
+### EC2 Instance (AWS)
+
+While setting up a server on aws you can create the ssh key-pair for a particular user and then can download it and
+
+(i) Run this command (if you have choosen ubuntu machine)
+
+```bash
+ssh -i rajat.pem ubuntu@ip_address
+```
+
+**where this - i : input keypair rajat.pem which should be in root folder i.e. /users/<username> ,otherwise it will pick the default key-pair stored in ~/.ssh**
+
+(ii) Change rajat.pem file access mode (permissions)
+
+- Check the permission of file using:
+
+```bash
+ls -al #(for bash)
+ls -Force #(for windows)
+```
+
+- Run below command to change permissions:
+
+```bash
+chmod 700 rajat.pem
 ```
 
 ---
