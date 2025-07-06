@@ -2,106 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.rajatbhati.in/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/common-terminologies/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/http-connections/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/protocol-layering/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/web-caching/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/dns/dns-records/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/dns/dns/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/computer-network/dns/web-hosting/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/cyber-security/common-terminologies/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/cyber-security/cyber-attacks/csrf/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/cyber-security/cyber-attacks/sql-injection/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/cyber-security/cyber-attacks/xss/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/cyber-security/cyber-attacks/xxe/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/mkdocs/information/mkdocs-info/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/mkdocs/snippets/mkdocs-snippet/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/react/information/example-info/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/react/snippets/example-snippet/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/server-setup/cloud-development/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
+    </url>
+    <url>
+         <loc>https://docs.rajatbhati.in/server-setup/manage-and-deliver-assets/</loc>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/server-setup/ssh-keys-and-server-access/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/software-engineering/basics/software-software_engineering/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/software-engineering/sdlc/agile-model/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/software-engineering/sdlc/sdlc-models-summary/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/software-engineering/sdlc/sdlc-models/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/software-engineering/sdlc/sdlc/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/virtual-environment/information/virtual-env-info/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
     <url>
          <loc>https://docs.rajatbhati.in/virtual-environment/snippets/create-virtual-env/</loc>
-         <lastmod>2025-07-05</lastmod>
+         <lastmod>2025-07-06</lastmod>
     </url>
 </urlset>

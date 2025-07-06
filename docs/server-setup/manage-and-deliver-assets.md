@@ -60,3 +60,119 @@ When a user in India requests the file:
 
 - S3 stores your files.
 - CloudFront (CDN) brings them closer to your users, making access faster and more reliable.
+
+---
+
+## Hosting a Website on S3 with a Custom Domain (`app.rajat.com`)
+
+You can host a website using S3 and map it to your custom domain in two ways:
+
+- **Option 1: HTTP only (no SSL, no CloudFront)**
+
+- **Option 2: HTTPS (secure, using CloudFront + SSL certificate)**
+
+       [However you can use directly http via cloudfront]
+
+---
+
+#### Note (Read it)
+
+` While using cloudfront you can't directly point app.rajat.com to CName or url of your cloudfront. (These platforms act as fully managed hosting providers.)`
+
+- **_When you add a CNAME like: `app.rajat.com` → `your-app.onrender.com`
+  They handle everything else for you :)_**
+
+**CloudFront is not a hosting service. It’s just a CDN/reverse proxy provided by AWS.**
+With CloudFront, you’re the sysadmin. AWS gives you raw power — but you must explicitly tell CloudFront:
+
+- What domain to accept
+
+- What SSL cert to use
+
+- How to route traffic
+
+If you don’t configure all this manually, it won’t “just work.”
+
+---
+
+### `(Below things Can vary it is just an overview)`
+
+### - Option 1: Host with **HTTP Only** (No CloudFront)
+
+**Steps**
+
+1. **Enable Static Website Hosting in S3**
+
+   - Open your S3 bucket (must be named `app.rajat.com`)
+   - Go to **Properties > Static website hosting**
+   - Enable it and set `index.html` as the index document
+
+2. **Make the Bucket Public**
+
+   - Use this bucket policy to allow public access:
+     ```json
+     {
+       "Version": "2012-10-17",
+       "Statement": [
+         {
+           "Effect": "Allow",
+           "Principal": "*",
+           "Action": "s3:GetObject",
+           "Resource": "arn:aws:s3:::app.rajat.com/*"
+         }
+       ]
+     }
+     ```
+
+3. **Add a CNAME in Your DNS Provider (e.g., GoDaddy)**
+
+   - Go to DNS settings for your domain
+   - Add a CNAME record:
+     ```
+     Name: app
+     Value: app.rajat.com.s3-website-ap-south-1.amazonaws.com
+     ```
+     _(Replace `ap-south-1` with your actual AWS region)_
+
+4. Done! Now you can open `http://app.rajat.com` in your browser.
+
+**Note**
+
+- This works only with **HTTP** (not secure).
+- Browsers may show "Not Secure" in the address bar.
+- Not recommended for login pages, forms, or private data.
+
+---
+
+### - Option 2: Host with **HTTPS** using CloudFront
+
+If you want your site to load securely at `https://app.rajat.com`, follow these steps:
+
+**Steps**
+
+1. **Create an SSL Certificate**
+
+   - Go to [AWS Certificate Manager (ACM)](https://console.aws.amazon.com/acm/home)
+   - Choose **us-east-1** region
+   - Request a public certificate for `app.rajat.com`
+   - Validate ownership via DNS (you’ll get a CNAME to add in GoDaddy)
+
+2. **Create a CloudFront Distribution**
+
+   - Set the **origin** as your S3 bucket
+   - In **Alternate Domain Names (CNAMEs)**, enter `app.rajat.com`
+   - Attach the SSL certificate you created in ACM
+   - Set Viewer Protocol Policy to “Redirect HTTP to HTTPS”
+
+3. **Update DNS in GoDaddy**
+
+   - Go to your domain’s DNS
+   - Add a CNAME:
+     ```
+     Name: app
+     Value: <your-cloudfront-id>.cloudfront.net
+     ```
+
+4. Done! Now `https://app.rajat.com` will securely load your S3 website.
+
+---
