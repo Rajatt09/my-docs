@@ -121,6 +121,7 @@ nav:
       - SSH keys and server access: server-setup/ssh-keys-and-server-access.md
       - Cloud Development: server-setup/cloud-development.md
       - Manage and deliver assets: server-setup/manage-and-deliver-assets.md
+      - Docker & Kubernetes: server-setup/docker-kubernetes.md
 
   - Virtual Environment:
       - Information: virtual-environment/information/virtual-env-info.md
