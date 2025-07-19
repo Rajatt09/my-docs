@@ -124,6 +124,8 @@ nav:
           - Manage and delivering assets: server-setup/managing-delivering-assets/manage-and-deliver-assets.md
           - Video .mp4 assets: server-setup/managing-delivering-assets/video-mp4-assets.md
       - Docker & Kubernetes: server-setup/docker-kubernetes.md
+      - System Design:
+          - System Design Basics: server-setup/system-design/system-design-snippets.md
 
   - Virtual Environment:
       - Information: virtual-environment/information/virtual-env-info.md
