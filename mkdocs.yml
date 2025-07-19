@@ -120,7 +120,9 @@ nav:
   - Development:
       - SSH keys and server access: server-setup/ssh-keys-and-server-access.md
       - Cloud Development: server-setup/cloud-development.md
-      - Manage and deliver assets: server-setup/manage-and-deliver-assets.md
+      - Manage and deliver assets:
+          - Manage and delivering assets: server-setup/managing-delivering-assets/manage-and-deliver-assets.md
+          - Video .mp4 assets: server-setup/managing-delivering-assets/video-mp4-assets.md
       - Docker & Kubernetes: server-setup/docker-kubernetes.md
 
   - Virtual Environment:
