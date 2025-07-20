@@ -41,3 +41,9 @@ Fan-out architecture is a system design pattern where a single event or task is 
 ## Sns (simple notification service)
 
 ![sns-architecture](./../../images/sns-architecture.png)
+
+> Note:
+
+> A **monolithic architecture** is a traditional software design where the entire application is built and deployed as a single unit. All components—such as UI, business logic, and data access—are tightly integrated and share the same codebase. It’s easier to develop, test, and deploy for small-scale applications or MVPs. However, as the application grows, monoliths become harder to scale, maintain, and update. A single issue in one part can affect the entire system.
+
+> In contrast, a **microservices** architecture breaks the application into smaller, independent services, each responsible for a specific functionality. These services communicate over a network using APIs and can be developed, deployed, and scaled independently. Microservices offer greater flexibility, fault isolation, and scalability, making them ideal for large and complex applications. However, they require more sophisticated infrastructure, communication handling, and team coordination.

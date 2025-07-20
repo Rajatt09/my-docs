@@ -237,3 +237,8 @@ The Cloud Controller Manager is cloud-specific. If your cluster is on AWS, it's 
 It acts as the bridge between Kubernetes and the cloud platform you’re using.
 
 It handles things Kubernetes itself can’t create, like Load Balancers or cloud storage.
+
+---
+
+> Note:
+> **Rolling updates** are a deployment strategy used in Kubernetes (K8s) (and other systems like AWS ECS, Docker Swarm) to gradually replace old versions of your application with new ones — with zero downtime.
