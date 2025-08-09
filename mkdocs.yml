@@ -127,6 +127,9 @@ nav:
       - System Design:
           - System Design Basics: server-setup/system-design/system-design-snippets.md
 
+  - AI-ML:
+      - MCP Servers: ai-ml/mcp-servers.md
+
   - Virtual Environment:
       - Information: virtual-environment/information/virtual-env-info.md
       - Snippets: virtual-environment/snippets/create-virtual-env.md
