@@ -154,7 +154,6 @@ git config --global alias.use-personal '!f() { git config user.name "your-name";
 ```bash
 git config --global alias.use-work '!f() { git config user.name "your-name"; git config user.email "your-work-email"; url=$(git remote get-url origin); url=${url/github.com/github-work}; url=${url/github-personal/github-work}; git remote set-url origin $url; }; f'
 ```
-
 ---
 
 ### Create switch commands (global)
@@ -228,3 +227,10 @@ It should show something like:
 ```
 origin  git@github-personal:...
 ```
+
+---- 
+
+**Note:**
+- `git ssh-personal` / `git ssh-work`: Switch the default SSH key before cloning a repository
+- `git use-personal` / `git use-work`: Switch Git identity and remote URL within an already initialized repository
+- `git remote -v`: Verify which account the current repository is configured with
