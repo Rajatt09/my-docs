@@ -148,11 +148,11 @@ Hi <username>! You've successfully authenticated
 These aliases switch your Git identity and remote URL for each account.
 
 ```bash
-git config --global alias.use-personal '!f() { git config user.name "your-name"; git config user.email "your-personal-email"; url=$(git remote get-url origin); url=${url/github.com/github-personal}; git remote set-url origin $url; }; f'
+git config --global alias.use-personal '!f() { git config user.name "your-name"; git config user.email "your-personal-email"; url=$(git remote get-url origin); url=${url/github.com/github-personal}; url=${url/github-work/github-personal}; git remote set-url origin $url; }; f'
 ```
 
 ```bash
-git config --global alias.use-work '!f() { git config user.name "your-name"; git config user.email "your-work-email"; url=$(git remote get-url origin); url=${url/github.com/github-work}; git remote set-url origin $url; }; f'
+git config --global alias.use-work '!f() { git config user.name "your-name"; git config user.email "your-work-email"; url=$(git remote get-url origin); url=${url/github.com/github-work}; url=${url/github-personal/github-work}; git remote set-url origin $url; }; f'
 ```
 
 ---
