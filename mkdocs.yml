@@ -143,6 +143,9 @@ nav:
       - CSRF Attacks: cyber-security/cyber-attacks/csrf.md
       - XXE Attacks: cyber-security/cyber-attacks/xxe.md
       - SQL Injection: cyber-security/cyber-attacks/sql-injection.md
+  - Multi Git Accounts:
+      - Submodule Error: multi-git-accounts/git-submodule-error.md
+      - Setup: multi-git-accounts/setup.md
   - Computer Network:
       - Common Terminologies: computer-network/common-terminologies.md
       - Protocol Layering: computer-network/protocol-layering.md
