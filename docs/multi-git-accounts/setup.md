@@ -113,8 +113,11 @@ Host github
 ```
 
 Save and exit:
+
 - Ctrl + X
+
 - Y
+
 - Enter
 
 ## Step 5: Test the SSH Connections
@@ -154,21 +157,22 @@ git config --global alias.use-personal '!f() { git config user.name "your-name";
 ```bash
 git config --global alias.use-work '!f() { git config user.name "your-name"; git config user.email "your-work-email"; url=$(git remote get-url origin); url=${url/github.com/github-work}; url=${url/github-personal/github-work}; git remote set-url origin $url; }; f'
 ```
----
 
-### Create switch commands (global)
+Create switch commands (global)
+
+[OPTIONAL - ONE CAN SKIP THIS SWITCH COMMANDS IF IN DEFAULT CASE IN STEP 4 IDENTITY FILE IS SET TO PERSONAL OR WORK ONE]
 
 ```bash
 git config --global alias.ssh-personal '!ln -sf ~/.ssh/id_ed25519_personal ~/.ssh/current_github_key'
 ```
 
 ```bash
-git config --global alias.ssh-work '!ln -sf ~/.ssh/id_ed25519_work ~/.ssh/current_github_key
+git config --global alias.ssh-work '!ln -sf ~/.ssh/id_ed25519_work ~/.ssh/current_github_key'
 ```
 
----
-
 ## Step 7: Now before doing anything on github switch to the correct intented github account
+
+[FOR DEFAULT CASE]
 
 Switch to personal account in a repository:
 
@@ -189,7 +193,9 @@ ssh -T git@github.com
 ```
 
 --- 
-### Second method [OR YOU CAN USE]
+### Second method - [TO BE USED IN GIT INITIALISED REPO]
+
+Switch to personal one:
 
 ```bash
 git use-personal
@@ -200,13 +206,6 @@ Switch to work account:
 ```bash
 git use-work
 ```
-
-**but if second method chosen**
-
-Be cautious before cloning: git clone git@github.com:<username>/<reponame>.git
-
-replace github.com to github-personal or github-work as intended.
-
 ---
 
 Check your current Git identity (used for commits):
